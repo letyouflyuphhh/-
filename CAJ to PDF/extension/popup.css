@@ -1,0 +1,157 @@
+:root {
+  color-scheme: light;
+  --bg: linear-gradient(160deg, #f8f4ea 0%, #ebe5d6 100%);
+  --card: rgba(255, 252, 246, 0.88);
+  --border: rgba(84, 65, 39, 0.16);
+  --text: #2d2418;
+  --muted: #6a5a45;
+  --primary: #0f766e;
+  --primary-strong: #115e59;
+  --secondary: #efe6d3;
+  --danger: #b42318;
+  --shadow: 0 16px 40px rgba(68, 50, 22, 0.14);
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-width: 360px;
+  background: var(--bg);
+  color: var(--text);
+  font: 14px/1.5 "Segoe UI", "PingFang SC", sans-serif;
+}
+
+.app {
+  padding: 18px;
+}
+
+.hero {
+  margin-bottom: 16px;
+}
+
+.eyebrow {
+  margin: 0 0 6px;
+  color: var(--primary);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+}
+
+.hero h1 {
+  margin: 0;
+  font-size: 28px;
+  line-height: 1.05;
+}
+
+.subtitle {
+  margin: 8px 0 0;
+  color: var(--muted);
+}
+
+.panel {
+  padding: 16px;
+  border: 1px solid var(--border);
+  border-radius: 18px;
+  background: var(--card);
+  box-shadow: var(--shadow);
+  backdrop-filter: blur(8px);
+}
+
+.field {
+  display: block;
+  margin-bottom: 14px;
+}
+
+.field span {
+  display: block;
+  margin-bottom: 6px;
+  font-size: 12px;
+  color: var(--muted);
+}
+
+.field input {
+  width: 100%;
+  padding: 10px 12px;
+  border: 1px solid var(--border);
+  border-radius: 12px;
+  background: #fffdfa;
+  color: var(--text);
+}
+
+.dropzone {
+  display: grid;
+  gap: 6px;
+  padding: 18px;
+  border: 1.5px dashed rgba(15, 118, 110, 0.35);
+  border-radius: 16px;
+  background: rgba(255, 255, 255, 0.7);
+  cursor: pointer;
+  transition: transform 120ms ease, border-color 120ms ease, background 120ms ease;
+}
+
+.dropzone:hover,
+.dropzone.is-dragging {
+  transform: translateY(-1px);
+  border-color: var(--primary);
+  background: rgba(236, 253, 245, 0.9);
+}
+
+.dropzone input {
+  display: none;
+}
+
+.dropzone span {
+  font-weight: 600;
+}
+
+.dropzone small {
+  color: var(--muted);
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin-top: 14px;
+}
+
+button {
+  padding: 11px 14px;
+  border: 0;
+  border-radius: 12px;
+  font-weight: 700;
+  cursor: pointer;
+}
+
+button:disabled {
+  cursor: wait;
+  opacity: 0.7;
+}
+
+.primary {
+  background: var(--primary);
+  color: #f6fffd;
+}
+
+.primary:hover {
+  background: var(--primary-strong);
+}
+
+.secondary {
+  background: var(--secondary);
+  color: var(--text);
+}
+
+.status {
+  min-height: 21px;
+  margin: 14px 0 0;
+  color: var(--muted);
+}
+
+.status.error {
+  color: var(--danger);
+}
