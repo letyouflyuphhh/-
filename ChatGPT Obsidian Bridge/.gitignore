@@ -1,0 +1,4 @@
+chrome-extension/node_modules/
+chrome-extension/dist/
+obsidian-plugin/node_modules/
+obsidian-plugin/main.js
