@@ -1,0 +1,18 @@
+{
+  "manifest_version": 3,
+  "name": "CAJ to PDF",
+  "version": "0.1.0",
+  "description": "Convert local CAJ files to PDF through a local helper service.",
+  "action": {
+    "default_title": "CAJ to PDF",
+    "default_popup": "popup.html"
+  },
+  "permissions": [
+    "downloads",
+    "storage"
+  ],
+  "host_permissions": [
+    "http://127.0.0.1:27183/*",
+    "http://localhost:27183/*"
+  ]
+}
