@@ -1,0 +1,26 @@
+.chatgpt-bridge-search {
+  display: grid;
+  gap: 12px;
+}
+
+.chatgpt-bridge-search input {
+  width: 100%;
+}
+
+.chatgpt-bridge-results {
+  display: grid;
+  gap: 8px;
+  max-height: 420px;
+  overflow: auto;
+}
+
+.chatgpt-bridge-result {
+  border: 1px solid var(--background-modifier-border);
+  border-radius: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
+
+.chatgpt-bridge-result:hover {
+  background: var(--background-secondary);
+}
