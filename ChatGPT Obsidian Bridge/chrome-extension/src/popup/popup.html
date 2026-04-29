@@ -1,0 +1,33 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ChatGPT Obsidian Bridge</title>
+    <link rel="stylesheet" href="./popup.css" />
+  </head>
+  <body>
+    <main class="app">
+      <section class="panel">
+        <h1>ChatGPT Obsidian Bridge</h1>
+        <label class="token-field">
+          <span>Bridge token</span>
+          <input id="bridge-token" type="password" placeholder="Match Obsidian plugin token" />
+        </label>
+        <div id="conversation-meta" class="meta"></div>
+        <div class="actions">
+          <button id="select-all" type="button">Select all</button>
+          <button id="unselect-all" type="button">Unselect all</button>
+          <button id="import-selected" type="button" class="primary">Import selected to Obsidian</button>
+          <button id="import-separate-note" type="button">Import selected as new note</button>
+          <button id="import-segments" type="button">Import segments as notes</button>
+        </div>
+        <p id="status" class="status"></p>
+      </section>
+      <section class="messages-panel">
+        <div id="messages" class="messages"></div>
+      </section>
+    </main>
+    <script type="module" src="./popup.ts"></script>
+  </body>
+  </html>
