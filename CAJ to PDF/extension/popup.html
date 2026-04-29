@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>CAJ to PDF</title>
+    <link rel="stylesheet" href="popup.css">
+  </head>
+  <body>
+    <main class="app">
+      <header class="hero">
+        <p class="eyebrow">Chrome / Edge</p>
+        <h1>CAJ to PDF</h1>
+        <p class="subtitle">Select a local CAJ file and convert it through your local helper service.</p>
+      </header>
+
+      <section class="panel">
+        <label class="field">
+          <span>Helper URL</span>
+          <input id="helperUrl" type="url" value="http://127.0.0.1:27183" spellcheck="false">
+        </label>
+
+        <label class="dropzone" for="fileInput" id="dropzone">
+          <input id="fileInput" type="file" accept=".caj,application/octet-stream">
+          <span id="fileLabel">Choose a .caj file</span>
+          <small>Drag a file here or click to browse</small>
+        </label>
+
+        <div class="actions">
+          <button id="checkButton" type="button" class="secondary">Check helper</button>
+          <button id="convertButton" type="button" class="primary">Convert</button>
+        </div>
+
+        <p id="status" class="status" role="status">Ready.</p>
+      </section>
+    </main>
+
+    <script src="popup.js"></script>
+  </body>
+</html>
