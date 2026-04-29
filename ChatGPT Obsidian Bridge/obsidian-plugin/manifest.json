@@ -1,0 +1,9 @@
+{
+  "id": "chatgpt-obsidian-bridge",
+  "name": "ChatGPT Obsidian Bridge",
+  "version": "0.1.0",
+  "minAppVersion": "1.5.0",
+  "description": "Imports selected ChatGPT web conversation messages into Obsidian.",
+  "author": "OpenAI Codex",
+  "isDesktopOnly": true
+}
